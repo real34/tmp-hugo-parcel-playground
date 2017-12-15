@@ -1,0 +1,9 @@
+<nav>
+  <!-- <pre>{{ printf "%#v" $.Data }}</pre> -->
+  <ul class="menu">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.styleguide }}
+      <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
+    {{ end }}
+  </ul>
+</nav>

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predev": "hugo -w&",
+    "predev": "hugo -wDF&",
     "dev": "parcel public/index.html"
   },
   "keywords": [],
