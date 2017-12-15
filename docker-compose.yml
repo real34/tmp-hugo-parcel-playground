@@ -1,0 +1,13 @@
+npm:
+  build: ./
+  command: run dev
+  expose:
+    - 1234
+  ports:
+    - "35729:35729"
+  volumes:
+    - ~/.npm:/root/.npm
+    - ./:/app
+  environment:
+    VIRTUAL_HOST: hugo.test
+    VIRTUAL_PORT: 1234
