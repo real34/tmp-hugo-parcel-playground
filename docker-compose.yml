@@ -3,8 +3,10 @@ npm:
   command: run dev
   expose:
     - 1234
+    - 1337
   ports:
-    - "35729:35729"
+    - "1234:1234"
+    - "1337:1337"
   volumes:
     - ~/.npm:/root/.npm
     - ./:/app
